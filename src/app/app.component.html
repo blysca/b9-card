@@ -1,0 +1,25 @@
+<div class="b9C-DT">
+  <mat-toolbar
+    color="primary">
+    <mat-toolbar-row>
+      <span>{{title}}</span>
+
+      <span class="spacer"></span>
+
+      <button
+        routerLink="/list"
+        mat-icon-button
+              matTooltip="Show all cards">
+        <mat-icon aria-label="all cards">list_alt</mat-icon>
+      </button>
+      <button
+        routerLink="/card/add"
+        mat-icon-button
+        matTooltip="Add card">
+        <mat-icon aria-label="Add one more card">add</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

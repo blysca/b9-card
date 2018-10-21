@@ -1,0 +1,18 @@
+.b9C-DT.mat-icon-button {
+  margin-left: auto;
+}
+
+:host ::ng-deep{
+  .mat-card-header{
+    .mat-card-header-text {
+      margin: 0;
+      max-width: calc(100% - 40px );
+
+      .mat-card-title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

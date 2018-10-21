@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>{{data.name.first + ' ' + data.name.last}}</h2>
+<div mat-dialog-content>
+  <img src="{{data.picture}}" alt="">
+  <mat-list
+    class="b9C-DT"
+    role="list">
+    <mat-list-item role="listitem">Index: {{data.indent}}1</mat-list-item>
+    <mat-list-item role="listitem">Age: {{data.age}}1</mat-list-item>
+    <mat-list-item role="listitem">Email: {{data.email}}1</mat-list-item>
+    <mat-list-item role="listitem">Phone: {{data.phone}}1</mat-list-item>
+    <mat-list-item role="listitem">Address: {{data.address}}1</mat-list-item>
+    <mat-list-item role="listitem">Favorite fruit: {{data.favoriteFruit}}1</mat-list-item>
+    <mat-list-item role="listitem">Age {{data.favoriteFruit}}1</mat-list-item>
+  </mat-list>
+  <p>#tags: {{data.tags}}</p>
+  <p>{{data.about}}</p>
+</div>
+<div
+  align="end"
+  mat-dialog-actions>
+  <button
+    mat-button
+    color="primary"
+    mat-dialog-close>Ok</button>
+</div>

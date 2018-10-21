@@ -1,0 +1,165 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "cards": [
+    {
+      "id": 2,
+      "_id_": "5bcc70ba026bdb4e90573a26",
+      "index": 2,
+      "isActive": true,
+      "picture": "https://placeimg.com/400/320/people",
+      "age": 33,
+      "name": {
+        "first": "Morrow",
+        "last": "Pena"
+      },
+      "email": "morrow.pena@undefined.tv",
+      "phone": "+1 (975) 489-2361",
+      "address": "535 John Street, Finzel, Tennessee, 9908",
+      "about": "Ex elit nisi dolore deserunt in cillum est. Veniam do aute laborum ullamco tempor sit voluptate duis pariatur nostrud minim velit. Sit occaecat ea reprehenderit et exercitation adipisicing minim occaecat est in ad. Consectetur duis magna nisi quis. Minim qui occaecat magna sint cillum irure ex occaecat deserunt adipisicing. Aliquip non est aute reprehenderit mollit.",
+      "tags": [
+        "adipisicing",
+        "ad",
+        "amet",
+        "enim",
+        "ut"
+      ],
+      "favoriteFruit": "apple"
+    },
+    {
+      "id": 5,
+      "_id_": "5bcc70ba22520437e8c601e2",
+      "index": 5,
+      "isActive": true,
+      "picture": "https://placeimg.com/400/320/people",
+      "age": 27,
+      "name": {
+        "first": "Janell",
+        "last": "Kim"
+      },
+      "email": "janell.kim@undefined.me",
+      "phone": "+1 (823) 478-2604",
+      "address": "957 Farragut Road, Somerset, South Carolina, 7822",
+      "about": "Sit ad commodo tempor quis non ullamco. Ad amet ullamco sint fugiat proident Lorem sit id esse fugiat esse fugiat eu id. Laboris nisi dolor elit sint excepteur ut exercitation amet. Veniam cillum magna officia nostrud eiusmod amet commodo. Sint proident ut adipisicing ut et qui dolore elit quis.",
+      "tags": [
+        "dolore",
+        "aute",
+        "anim",
+        "consequat",
+        "cillum"
+      ],
+      "favoriteFruit": "banana"
+    },
+    {
+      "id": 6,
+      "_id_": "5bcc70babcef01bc346a6c93",
+      "index": 6,
+      "isActive": false,
+      "picture": "https://placeimg.com/400/320/people",
+      "age": 37,
+      "name": {
+        "first": "Jeanine",
+        "last": "Figueroa"
+      },
+      "email": "jeanine.figueroa@undefined.name",
+      "phone": "+1 (919) 489-3488",
+      "address": "200 Little Street, Keyport, Nevada, 6906",
+      "about": "Aute pariatur esse anim occaecat sunt cupidatat commodo laborum. Occaecat amet nulla laborum quis aliqua mollit sint enim anim. Cupidatat occaecat exercitation sit ad reprehenderit fugiat esse voluptate consequat amet occaecat enim et. Proident occaecat labore irure officia quis aliquip nisi. Eu adipisicing dolor voluptate nisi do occaecat tempor ad pariatur laborum.",
+      "tags": [
+        "et",
+        "laborum",
+        "eiusmod",
+        "ex",
+        "velit"
+      ],
+      "favoriteFruit": "apple"
+    },
+    {
+      "id": 7,
+      "_id_": "5bcc70ba7ed0dc8dffe9b103",
+      "index": 7,
+      "isActive": false,
+      "picture": "https://placeimg.com/400/320/people",
+      "age": 33,
+      "name": {
+        "first": "Tanner",
+        "last": "Gould"
+      },
+      "email": "tanner.gould@undefined.biz",
+      "phone": "+1 (844) 475-3971",
+      "address": "907 Dictum Court, Dale, Minnesota, 5211",
+      "about": "Cupidatat commodo sunt est magna culpa magna quis pariatur ex. Eu exercitation velit laboris laborum consequat duis aliquip nostrud. Dolore sunt amet occaecat nisi cillum aliquip voluptate aliqua mollit in fugiat id. Elit velit ut amet aliqua dolor magna. Eu sunt ullamco elit aliqua eiusmod esse laboris mollit dolore. Laboris nostrud duis excepteur id.",
+      "tags": [
+        "nostrud",
+        "nulla",
+        "id",
+        "fugiat",
+        "et"
+      ],
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "id": 8,
+      "_id_": "5bcc70ba675561f274e61cc7",
+      "index": 8,
+      "isActive": true,
+      "picture": "https://placeimg.com/400/320/people",
+      "age": 20,
+      "name": {
+        "first": "Corine",
+        "last": "Simon"
+      },
+      "email": "corine.simon@undefined.org",
+      "phone": "+1 (869) 555-3742",
+      "address": "867 Estate Road, Savage, North Carolina, 7272",
+      "about": "Anim aliqua labore commodo proident nostrud pariatur qui tempor aliqua. Consequat ex Lorem aliqua minim consequat magna. Ex enim irure deserunt sunt qui in aute proident voluptate irure ex cillum et officia. Officia cupidatat id reprehenderit amet. Est amet adipisicing fugiat qui amet. Aute occaecat excepteur ut cillum minim excepteur. Eu exercitation consequat excepteur eu qui duis labore reprehenderit.",
+      "tags": [
+        "amet",
+        "pariatur",
+        "duis",
+        "tempor",
+        "non"
+      ],
+      "favoriteFruit": "apple"
+    },
+    {
+      "id": 9,
+      "_id_": "5bcc70ba5ab46f972129c9cf",
+      "index": 9,
+      "isActive": true,
+      "picture": "https://placeimg.com/400/320/people",
+      "age": 38,
+      "name": {
+        "first": "Velez",
+        "last": "Hyde"
+      },
+      "email": "velez.hyde@undefined.co.uk",
+      "phone": "+1 (867) 524-2842",
+      "address": "769 Nassau Street, Dodge, Kentucky, 8446",
+      "about": "Commodo magna mollit incididunt aliqua. Sit enim aute laboris nisi do nostrud nostrud. Consequat laboris pariatur labore est dolor aute dolore. Culpa laboris irure nisi aliqua veniam ex exercitation nisi irure. Irure nulla ex proident elit irure enim veniam dolore. Elit ea cillum nulla aliqua duis. Ea duis do enim eiusmod cillum tempor laboris do eiusmod.",
+      "tags": [
+        "non",
+        "commodo",
+        "enim",
+        "deserunt",
+        "dolore"
+      ],
+      "favoriteFruit": "strawberry"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

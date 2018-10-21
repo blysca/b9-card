@@ -1,0 +1,32 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{card.name.first + ' ' + card.name.last}}</mat-card-title>
+    <mat-card-subtitle>{{card.age}}</mat-card-subtitle>
+    <button
+      type="button"
+      (click)="openDetail()"
+      class="b9C-DT"
+      color="primary"
+      mat-icon-button>
+      <mat-icon aria-label="quick view">remove_red_eye</mat-icon>
+    </button>
+  </mat-card-header>
+  <img mat-card-image src="{{card.picture}}" alt="{{card.name.firstName + '' + card.name.lastName}}">
+  <mat-card-content>
+    <p>{{card.email}}</p>
+    <p>{{card.phone}}</p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button
+      (click)="onDelete()"
+      color="warn"
+      mat-icon-button>
+      <mat-icon aria-label="delede">delete</mat-icon>
+    </button>
+    <button
+      routerLink="/card/{{card.id}}/edit"
+      mat-icon-button>
+      <mat-icon aria-label="Edit">edit</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

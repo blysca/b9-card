@@ -1,0 +1,20 @@
+<ng-container *ngIf="cards; else spinner">
+  <div class="container">
+    <div class="row cards">
+      <app-card
+        class="col col-sm-6 col-md-4 col-lg-3"
+        *ngFor="let c of cards"
+        [card]="c"
+      ></app-card>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template
+  #spinner
+>
+  <mat-progress-spinner
+    color="primary"
+    mode="indeterminate">
+  </mat-progress-spinner>
+</ng-template>
