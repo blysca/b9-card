@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {delay} from "rxjs/operators";
+import {catchError, delay} from "rxjs/operators";
+import {Card} from "../interfaces/card";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +24,13 @@ export class CardsService {
     const url = `${this.cardsUrl}/${id}`;
     return this.http.get(url);
   }
-  editCard(id: number){}
+
+  updateCard(card: Card) {
+    const url = `${this.cardsUrl}/${card.id}`;
+    return this.http.put<Card>(url, card);
+  }
+
+
   deleteCard(id: number){
     console.log('*id*', id);
     const url = `${this.cardsUrl}/${id}`;

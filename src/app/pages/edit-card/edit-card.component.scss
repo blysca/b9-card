@@ -1,0 +1,32 @@
+section {
+  background-color: #f2f2f2;
+}
+
+mat-toolbar{
+  button {
+    margin-left: auto;
+  }
+}
+
+.mat-progress-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+}
+
+form {
+  h3 {
+    margin: 16px 0;
+  }
+}
+
+.mat-card {
+  margin-bottom: 24px;
+
+  mat-form-field {
+    display: block;
+    width: 100%;
+  }
+}

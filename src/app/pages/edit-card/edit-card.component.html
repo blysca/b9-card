@@ -1,5 +1,144 @@
-<h3>edit-card works!</h3>
+<section>
 
-<p>
-  {{card$ | json}}
-</p>
+<ng-container *ngIf="card$;else spinner">
+  <mat-toolbar
+    color="primary"
+  >
+    <span>
+      {{card$.name.first + ' ' + card$.name.last}}
+    </span>
+    <button
+      (click)="onSubmit()"
+      [disabled]="!(card.valid && card.touched && card.dirty)"
+      mat-raised-button
+      color="accent">Update</button>
+  </mat-toolbar>
+  <div class="container">
+    <form
+      class="row"
+      [formGroup]="card" (ngSubmit)="onSubmit()">
+      <h3 class="col-12 mb-4">Form Status: {{ card.status }}</h3>
+      <div class="col col-sm-6 col-lg-4">
+        <mat-card
+          formGroupName="system">
+          <mat-form-field>
+            <input matInput
+                   type="number"
+                   readonly
+                   formControlName="id"
+                   placeholder="Id(read only)">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput
+                   type="text"
+                   readonly
+                   formControlName="_id_"
+                   placeholder="Id(read only)">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput
+                   type="number"
+                   readonly
+                   formControlName="index"
+                   placeholder="Index(read only)">
+          </mat-form-field>
+          <mat-slide-toggle
+            formControlName="isActive"
+            class="example-margin">
+            Active
+          </mat-slide-toggle>
+        </mat-card>
+      </div>
+
+      <div class="col col-sm-6 col-lg-4 mb-3">
+        <mat-card
+          formGroupName="user">
+          <mat-form-field mat-line>
+            <input matInput
+                   type="text"
+                   formControlName="picture"
+                   placeholder="Avatar">
+          </mat-form-field>
+          <mat-form-field mat-line>
+            <input matInput
+                   type="number"
+                   formControlName="age"
+                   placeholder="Age">
+          </mat-form-field>
+          <ng-container formGroupName="name">
+            <mat-form-field mat-line>
+              <input matInput
+                     type="text"
+                     formControlName="first"
+                     placeholder="First Name">
+            </mat-form-field>
+            <mat-form-field mat-line>
+              <input matInput
+                     type="text"
+                     formControlName="last"
+                     placeholder="Last Name">
+            </mat-form-field>
+          </ng-container>
+        </mat-card>
+      </div>
+
+      <div class="col col-sm-6 col-lg-4 mb-3">
+        <mat-card
+          formGroupName="contacts">
+          <mat-form-field mat-line>
+            <input matInput
+                   type="email"
+                   formControlName="email"
+                   placeholder="Email">
+          </mat-form-field>
+          <mat-form-field mat-line>
+            <input matInput
+                   type="tel"
+                   formControlName="phone"
+                   placeholder="Phone">
+          </mat-form-field>
+          <mat-form-field mat-line>
+            <input matInput
+                   type="text"
+                   formControlName="address"
+                   placeholder="Address">
+          </mat-form-field>
+        </mat-card>
+      </div>
+
+      <div class="col col-sm-6 col-lg-4 mb-3">
+        <mat-card
+          formGroupName="moreInfo">
+          <mat-form-field mat-line>
+            <textarea matInput
+                      cdkTextareaAutosize
+                      formControlName="about"
+                      placeholder="About"
+            ></textarea>
+          </mat-form-field>
+          <mat-form-field mat-line>
+            <input matInput
+                   type="text"
+                   formControlName="tags"
+                   placeholder="Tags">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput
+                   type="text"
+                   formControlName="favoriteFruit"
+                   placeholder="Favorite Fruit">
+          </mat-form-field>
+        </mat-card>
+      </div>
+    </form>
+  </div>
+
+</ng-container>
+
+<ng-template #spinner>
+  <mat-progress-spinner
+    color="primary"
+    mode="indeterminate">
+  </mat-progress-spinner>
+</ng-template>
+</section>

@@ -12,7 +12,6 @@ export interface Card {
   about: string;
   tags: Array<string>;
   favoriteFruit: string;
-
 }
 
 export interface CardName {
