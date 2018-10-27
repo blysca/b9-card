@@ -1,1 +1,137 @@
-<h3>add-card works!</h3>
+<mat-toolbar color="primary">
+    <span>Add new card</span>
+    <button
+      (click)="onSubmit()"
+      [disabled]="!card.valid"
+      color="accent"
+      mat-raised-button>Create card</button>
+</mat-toolbar>
+<form
+  [formGroup]="card" (ngSubmit)="onSubmit()">
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-8  col-md-6">
+
+        <h3 class="col-12 mb-4">Form Status: {{ card.status }}</h3>
+
+        <mat-card>
+          <ng-container
+            formGroupName="system">
+            <!--<mat-form-field>
+              <input matInput
+                     type="number"
+                     readonly
+                     formControlName="id"
+                     placeholder="Id(read only)">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput
+                     type="text"
+                     readonly
+                     formControlName="_id_"
+                     placeholder="Id(read only)">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput
+                     type="number"
+                     readonly
+                     formControlName="index"
+                     placeholder="Index(read only)">
+            </mat-form-field>-->
+            <mat-slide-toggle
+              formControlName="isActive"
+              class="example-margin">
+              Active
+            </mat-slide-toggle>
+          </ng-container>
+          <ng-container
+            formGroupName="user">
+            <mat-form-field mat-line>
+              <input matInput
+                     type="text"
+                     formControlName="picture"
+                     placeholder="Avatar">
+            </mat-form-field>
+            <mat-form-field mat-line>
+              <input matInput
+                     type="number"
+                     formControlName="age"
+                     placeholder="Age">
+            </mat-form-field>
+            <ng-container formGroupName="name">
+              <mat-form-field mat-line>
+                <input matInput
+                       type="text"
+                       formControlName="first"
+                       placeholder="First Name">
+              </mat-form-field>
+              <mat-form-field mat-line>
+                <input matInput
+                       type="text"
+                       formControlName="last"
+                       placeholder="Last Name">
+              </mat-form-field>
+            </ng-container>
+          </ng-container>
+          <ng-container
+            formGroupName="contacts">
+            <mat-form-field mat-line>
+              <input matInput
+                     type="email"
+                     formControlName="email"
+                     placeholder="Email">
+            </mat-form-field>
+            <mat-form-field mat-line>
+              <input matInput
+                     type="tel"
+                     formControlName="phone"
+                     placeholder="Phone">
+            </mat-form-field>
+            <mat-form-field mat-line>
+              <input matInput
+                     type="text"
+                     formControlName="address"
+                     placeholder="Address">
+            </mat-form-field>
+          </ng-container>
+          <ng-container
+            formGroupName="moreInfo">
+            <mat-form-field mat-line>
+            <textarea matInput
+                      cdkTextareaAutosize
+                      formControlName="about"
+                      placeholder="About"
+            ></textarea>
+            </mat-form-field>
+            <mat-form-field mat-line>
+              <input matInput
+                     type="text"
+                     formControlName="tags"
+                     placeholder="Tags">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput
+                     type="text"
+                     formControlName="favoriteFruit"
+                     placeholder="Favorite Fruit">
+            </mat-form-field>
+          </ng-container>
+          <ng-container>
+            <button
+              (click)="onSubmit()"
+              [disabled]="!card.valid"
+              color="accent"
+              mat-raised-button>Create card</button>
+          </ng-container>
+        </mat-card>
+      </div>
+      <div class="col col-sm-4 col-md-4 b9C-DT">
+        <button
+          type="button"
+          (click)="basicData()"
+          color="accent"
+          mat-raised-button>Add basic data</button>
+      </div>
+    </div>
+  </div>
+</form>

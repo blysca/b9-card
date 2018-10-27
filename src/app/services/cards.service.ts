@@ -37,5 +37,10 @@ export class CardsService {
     return this.http.delete(url);
   }
 
-  addCard(){}
+  addCard(card){
+    return this.http.post(this.cardsUrl, card)
+      .pipe(
+        delay(500)
+      )
+  }
 }
